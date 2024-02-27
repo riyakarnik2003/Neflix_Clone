@@ -1,0 +1,432 @@
+*{
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family:"Poppins",sans-serif;
+    cursor: pointer;
+}
+
+.navbar{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 5%;
+    z-index: 10;
+    
+}
+
+.navbar_netflix{
+    height: 100%;
+    width: 125px;
+}
+
+.navbar_nav_items{
+    display: flex;
+    gap: 10px;
+
+}
+
+.netflix_logo{
+    width: 100%;
+    height: 100%;
+    /* top: 10px; */
+   
+
+}
+
+.languageDropdown{
+    background: transparent;
+    border: none;
+    color: white;
+}
+
+.dropdown_container{
+    border: 1px solid white;
+    
+    padding: 0.4rem;
+    border-radius: 5px;
+    background: rgba(0,0,0,0.4);
+}
+
+.signin_button{
+   border: #dc030f;
+   background-color: #dc030f;
+   color: white;
+   padding: 0.25rem 0.5rem;
+   
+   border-radius: 5px;
+   height: 35px;
+   width: 100px;
+}
+
+.hero_bg_img_cont{
+    width: 100%;
+    height: 100%;
+}
+
+.hero_bg_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+
+.hero_bg_overlay{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 114%;
+    background: rgba(0,0,0,0.6);
+
+}
+
+.hero_card{
+    position: absolute;
+    top: 30%;
+    left: 30.5%;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.hero-title{
+    font-weight: 600;
+    font-size: 3rem;
+   
+}
+
+.sub_title, 
+.hero_desc{
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin: 15px;
+}
+
+.email{
+    height: 60px;
+    width: 450px;
+   
+    font-size: 20px;
+    padding: 0.3rem 0.5rem;
+    border-radius: 3px;
+
+    border-color: white;
+    background: transparent;
+    margin: 12px;
+
+  
+}
+
+
+
+
+.get_started{
+   
+    font-size: large;
+    width: 170px;
+    height: 60px;
+    border-radius: 3px;
+    background-color: #dc030f;
+    border: 2px solid #dc030f;
+    color: white;
+}
+
+hr{
+    border: 5px solid rgb(69,69,69);
+}
+
+.card1{
+    position: relative;
+    display:inline-grid;
+   
+    grid-template-columns: 70% 40% ;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 60px;
+    
+}
+
+.desc1{
+    font-size: 27px;
+    padding: 0px 45px;
+}
+
+.card1 video{
+    position: relative;
+    width:105%;
+    height: 60%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+z-index: -1;
+
+}
+
+.card1 img{
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+
+.card2{
+    
+    font-size: 27px;
+    padding: 0px 45px;
+    
+}
+ 
+.card2 img{
+    
+    margin-top: -16%;
+}
+
+
+.desc2{
+    margin-left: 55%;
+    margin-top: 10%;
+}
+
+
+.card3{
+    position: relative;
+    display:inline-grid;
+   
+    grid-template-columns: 70% 40% ;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 60px;
+    
+}
+
+
+.desc3{
+    font-size: 27px;
+    padding: 0px 45px;
+}
+.card3 video{
+    position: relative;
+    width:65%;
+    height: 78%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    top: -87px;
+    left: 140px;
+    z-index: -1;
+
+}
+
+.card3 img{
+    width: 110%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+
+
+.card4{
+    
+
+    font-size: 27px;
+    padding: 0px 45px;
+    
+}
+ 
+.card4 img{
+    
+    margin-top: -15%;
+}
+
+
+.desc4{
+    margin-left: 55%;
+    margin-top: 10%;
+}
+
+
+.styleCards h1{
+    font-size: 3rem;
+    padding: 1rem;
+    padding-left: 0;
+}
+
+.styleCards h3{
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+
+.FAQ__accordian {
+    width: 100%;
+  }
+  .FAQ__title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    font-size: 18px;
+    background-color: #303030;
+    border: 1px solid #303030;
+    color: white;
+  }
+  
+  .FAQ__visible {
+    background-color: #303030;
+    border-top: 1px solid black;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+  }
+  
+  .FAQ__visible > p {
+    margin: 1rem;
+  }
+  .FAQ__list__container {
+    border-top: 8px solid #222;
+    padding: 2rem 0;
+  }
+  .FAQ__heading {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    margin: 1rem 3rem;
+  }
+  
+  .FAQ__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .FAQ__get__started__email {
+    text-align: center;
+  }
+  
+  .FAQ__get__started__email > h3 {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 2rem 0;
+  }
+  
+  footer {
+    border-top: 8px solid #333;
+    padding: 2rem 1rem;
+    color: #757575;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .footer__row__2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .footer__row__1 > h4 {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
+  .footer__row__3 > .dropdown__container {
+    width: fit-content;
+    border: 1px solid #757575;
+    color: #757575;
+  }
+  
+  .footer__row__3 > .dropdown__container > .language__drop__down {
+    color: #757575;
+  }
+  
+  @media (min-width: 768px) {
+    .hero__bg__image__container {
+      height: 100vh;
+    }
+}
+
+.FAQ__title {
+    font-size: 20px;
+  }
+  .FAQ__heading {
+    font-size: 38px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  .FAQ__list {
+    padding: 1rem 5rem;
+  }
+  .FAQ__get__started__email {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(15%);
+  }
+
+
+@media (min-width: 1024px) {
+  .navbar {
+    padding: 2% 5%;
+  }
+}
+
+.FAQ__list {
+    padding: 1rem 25rem;
+  }
+  .FAQ__get__started__email {
+    transform: translateX(16%);
+  }
+  footer {
+    padding: 2rem 20rem;
+    justify-content: flex-start;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .footer__row__2 {
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+
+  .footer__row__1,
+  .footer__row__3,
+  .footer__row__4 {
+    align-self: flex-start;
+  }
+
+  
+  
+  .primary__button {
+    background-color: #dc030f;
+    border: 1px solid #dc030f;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    border-radius: 2px;
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+
+  .dropdown_container_footer{
+    border: 1px solid white;
+    
+    
+    padding: 0.4rem;
+    border-radius: 5px;
+    background: rgba(0,0,0,0.4);
+  }
+
+@media (min-width: 1254px) {
+}
+
+  
